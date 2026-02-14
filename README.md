@@ -88,6 +88,6 @@ This project demonstrates:
 
 ## 👨‍💻 Author
 
-Joshua Allen  
+Allen Joshua 
 Master’s in Data Science | Aspiring Data Analyst  
 Open to Data Analytics opportunities
