@@ -1,40 +1,87 @@
-#Netflix Content Strategy Analysis
+# Netflix Content Strategy Analysis
+## Project Overview
+This project analyzes Netflix genre trends through a business strategy lens, not just exploratory data analysis.
 
-This project analyzes Netflix genre performance using a business-oriented data analytics approach rather than simple exploratory analysis.
+Instead of only visualizing genre distributions, the objective was to simulate how a Data Analyst might support content investment decisions by answering questions such as:
 
-**Objective
+* Which genres accelerated during COVID?
+* Which genres show consistent long-term growth?
+* Which high-volume categories are too volatile to rely on?
+* Where should strategic content investment be prioritized?
 
-To identify:**
-1.Genres with strong long-term growth
-2.Genres that accelerated during COVID
-3.High-volume but volatile segments
-4.Underrated investment opportunities
+The result is a structured, decision-oriented analytics pipeline.
 
-**Methodology**
-Using Python and Pandas, the pipeline calculates:
+## Dataset
+* Source: Netflix titles dataset
+* Records: 8,800+ titles
+* Time Range: 2008 – 2021
+* Categories: Movies and TV Shows
 
-**Year-over-year genre growth**
-1.Volatility (standard deviation over time)
-2.COVID momentum shift
-3.Risk-adjusted opportunity scoring
-4.Strategic quadrant classification
+## Analytical Framework
+The project was built as a modular pipeline using Python and Pandas.
 
-**Key Insights**
-1.International Movies & Dramas dominate sustained long-term volume.
-2.Select niche genres experienced disproportionate COVID acceleration.
-3.Risk-adjusted scoring highlights mid-volume genres with strong strategic upside.
+1️⃣ Year-over-Year Genre Growth
+Calculated annual title counts per genre and computed percentage growth to identify acceleration patterns.
 
-**Tech Stack**
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
+2️⃣ Volatility Measurement
+Measured standard deviation across time to quantify genre instability.
 
-**Strategic Framework**
-Genres were classified into quadrants based on:
+3️⃣ Risk-Adjusted Opportunity Score
+Developed a scoring model that balances:
+* Average long-term growth
+* Volatility
+* Consistency
 
-Average titles per year (volume)
-Volatility (risk)
+This prevents overvaluing high-growth but unstable segments.
 
-This enables data-driven content investment prioritization.
+4️⃣ COVID Momentum Analysis
+Compared pre-2020 and post-2020 growth to detect pandemic-driven shifts in content demand.
+
+5️⃣ Strategic Quadrant Modeling
+Built a quadrant framework using:
+* X-axis: Average Titles per Year
+* Y-axis: Volatility
+
+This allows genres to be classified into strategic categories such as:
+* Growth Engines
+* Stable Core
+* Emerging Opportunities
+* Niche Segments
+
+## Key Findings
+* International Movies and Dramas dominate long-term sustained volume.
+* Certain niche genres experienced disproportionate COVID acceleration.
+* Mid-volume genres with controlled volatility surfaced as strong strategic opportunities through risk-adjusted scoring.
+* Some high-volume categories show instability, suggesting allocation risk.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* seaborn
+* Time-Series Growth Modeling
+* Feature Engineering
+* Strategic Quadrant Analysis
+
+## Visual Outputs
+* Top COVID Growth Genres
+* Genre Volatility Analysis
+* Strategic Quadrant Classification
+* Risk-Adjusted Opportunity Table
+
+## Business Value
+This project demonstrates:
+* Analytical thinking beyond visualization
+* Metric engineering aligned with business decisions
+* Risk-aware modeling
+* Structured pipeline development
+* Strategic storytelling through data
+
+## Future Improvements
+
+* Add engagement metrics (if available)
+* Incorporate external demand signals
+* Extend quadrant model with clustering
+* Deploy interactive dashboard version
