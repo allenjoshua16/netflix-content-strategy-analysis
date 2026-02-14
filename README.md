@@ -85,3 +85,9 @@ This project demonstrates:
 * Incorporate external demand signals
 * Extend quadrant model with clustering
 * Deploy interactive dashboard version
+
+## 👨‍💻 Author
+
+Joshua Allen  
+Master’s in Data Science | Aspiring Data Analyst  
+Open to Data Analytics opportunities
